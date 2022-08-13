@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 800px;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .my-20px {
+            margin: 20px auto;
+        }
+        
+        .my-10px {
+            margin: 10px auto;
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .table tr:nth-child(even ) {
+            background-color: #f2f2f2;
+        }
+
+        .table tr:hover {
+            background-color: #ddd;
+        }
+
+        .table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04aa6d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title my-20px">
+            <h1>Welcome Class Based Views Django</h1>
+        </div>
+        <table class="table my-20px">
+            <thead>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th>Count</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ object.title }}</td>
+                    <td>{{ object.genre }}</td>
+                    <td>{{ object.author }}</td>
+                    <td>{{ object.isbn }}</td>
+                    <td>{{ object.count }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
