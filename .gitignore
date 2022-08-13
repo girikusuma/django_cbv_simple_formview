@@ -1,3 +1,5 @@
 /env
 
 formview_db.sqlite3
+
+settings.py
